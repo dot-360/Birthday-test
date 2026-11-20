@@ -1003,7 +1003,7 @@
 
             // TESTING MODE: Forced true so you can test the Nov 24 birthday unlock right now.
             // Switch back to the URL check before sharing with Vanshika.
-            const isPreview = true;
+            const isPreview = new URLSearchParams(window.location.search).get('preview') === 'true';
             const IST_OFFSET_MS = 330 * 60 * 1000; // UTC + 5:30
 
             /**
